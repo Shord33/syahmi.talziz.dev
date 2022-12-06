@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3946/3946005.png">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .movie-info span.yellow {
+            color: yellow;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        button {
+            border-radius: 50%;
+            padding: 0.25rem;
+            width: 100px;
+            height: 100px;
+            font-size: 50px;
+            border: hidden;
+            display: inline-block;
+        }
+
+        #pagenum {
+            padding: 0.25rem;
+            color: skyblue;
+            width: 100px;
+            height: 100px;
+            font-size: 50px;
+            display: inline-block;
+        }
+
+        button:hover {
+            background-color: rgb(122, 14, 247);
+            color: white;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <form id="form">
+            <input type="text" placeholder="Search" id="search" class="search">
+        </form>
+    </header>
+    <main id="main">
+        <div class="movie">
+            <img src="https://images.unsplash.com/photo-1518173835740-f5d14111d76a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdl fHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=877&q=80"
+                alt="Image">
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="green">9.8</span>
+            </div>
+
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur,
+                tenetur sequi repellat ut vitae reiciendis quisquam hic, magnam placeat
+                perspiciatis maxime neque? Dolore tempore reiciendis praesentium velit? Illum, pariatur!
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://images.unsplash.com/photo-1518173835740-f5d14111d76a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdl fHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=877&q=80"
+                alt="Image">
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="green">9.8</span>
+            </div>
+
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur,
+                tenetur sequi repellat ut vitae reiciendis quisquam hic, magnam placeat
+                perspiciatis maxime neque? Dolore tempore reiciendis praesentium velit? Illum, pariatur!
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://images.unsplash.com/photo-1518173835740-f5d14111d76a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdl fHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=877&q=80"
+                alt="Image">
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="green">9.8</span>
+            </div>
+
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur,
+                tenetur sequi repellat ut vitae reiciendis quisquam hic, magnam placeat
+                perspiciatis maxime neque? Dolore tempore reiciendis praesentium velit? Illum, pariatur!
+            </div>
+        </div>
+    </main>
+      
+    <div class="buttons">
+        <button class="next" onclick="prevPage()">&#8249;</button>
+        <h3 id="pagenum">1</h3>
+        <button class="next" onclick="nextPage()">&#8250;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
